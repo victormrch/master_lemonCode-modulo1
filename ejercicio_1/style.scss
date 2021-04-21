@@ -1,0 +1,70 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  justify-items: center;
+  grid-auto-rows: auto;
+}
+
+.box {
+  border-radius: $border-box;
+  width: $width-box;
+  height: $height-box;
+  color: $textColor;
+  margin: $margin-box;
+  @include centerTextInBox;
+
+  &.base-color {
+    width: $width-box * 2;
+  }
+}
+
+.container-1 {
+  .base-color {
+    background-color: $baseColor1;
+  }
+  @for $i from 1 through 4 {
+    .lighten-#{$i} {
+      background-color: lighten($baseColor1, +5% * $i);
+    }
+    @for $i from 1 through 4 {
+      .darken-#{$i} {
+        background-color: darken($baseColor1, +5% * $i);
+      }
+    }
+  }
+}
+
+.container-2 {
+  .base-color {
+    background-color: $baseColor2;
+  }
+  @for $i from 1 through 4 {
+    .lighten-#{$i} {
+      background-color: lighten($baseColor2, 5% * $i);
+    }
+    @for $i from 1 through 4 {
+      .darken-#{$i} {
+        background-color: darken($baseColor2, 5% * $i);
+      }
+    }
+  }
+}
+
+.container-3 {
+  .base-color {
+    background-color: $baseColor3;
+  }
+  @for $i from 1 through 4 {
+    .lighten-#{$i} {
+      background-color: lighten($baseColor3, 5% * $i);
+    }
+    @for $i from 1 through 4 {
+      .darken-#{$i} {
+        background-color: darken($baseColor3, 5% * $i);
+      }
+    }
+  }
+}
