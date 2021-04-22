@@ -1,0 +1,16 @@
+$width-box: 300px;
+$height-box: 100px;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  @include centerTextInBox;
+}
+.box {
+  width: $width-box;
+  height: $height-box;
+  border: solid 2px black;
+  border-radius: 40px 10px;
+  margin-bottom: 2px;
+  @include centerTextInBox;
+}

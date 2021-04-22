@@ -1,0 +1,27 @@
+@import "_base.scss";
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap");
+
+.base {
+  background-color: #d02a2a;
+}
+.important {
+  background-color: #6c0503;
+}
+.warning {
+  background-color: #828c84;
+}
+.ppal {
+  font-family: "Roboto", sans-serif;
+  border: none;
+  font-size: 35px;
+}
+.second {
+  font-family: "Old Standard TT", serif;
+  font-size: 30px;
+  border: none;
+}
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  border: none;
+  border-radius: 10px;
+}
