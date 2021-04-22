@@ -4,15 +4,15 @@
   color: white;
   border-radius: 15px/45px;
   &.base {
-    font-size: 25px;
+    font-size: $font-size-box;
     background-color: #012e67;
   }
   &.important {
-    font-size: 25px;
+    font-size: $font-size-box;
     background-color: #2b6684;
   }
   &.warning {
-    font-size: 25px;
+    font-size: $font-size-box;
     background-color: #9cacbf;
   }
 
@@ -20,11 +20,11 @@
     color: black;
     font-family: "Codystar", cursive;
     border: none;
-    font-size: 35px;
+    font-size: $font-size-ppal;
   }
   &.second {
     font-family: "Press Start 2P", cursive;
-    font-size: 20px;
+    font-size: $font-size-box;
     border: none;
     color: black;
   }
@@ -34,6 +34,6 @@
       rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
       rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
     border: none;
-    border-radius: 10px;
+    border-radius: $border-radius-shadow;
   }
 }
