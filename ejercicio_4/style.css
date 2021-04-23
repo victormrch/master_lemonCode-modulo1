@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
+@import url("./colors.css");
+
+body {
+  font-family: "Poppins";
+}
+.grid-container {
+  display: grid;
+  grid-row-gap: 25px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-card {
+  display: grid;
+  grid-template-rows: 1fr 1fr 0.15fr auto;
+  border: solid 2px var(--border-color);
+  margin: 0px 15px;
+}
+.image {
+  background-size: cover;
+  background-position: center center;
+}
+.image:hover {
+  transform: translatey(-5px) translatex(-5px) scale(1.15);
+}
+.image-1 {
+  background-image: url(../ejercicio_4/images/summer.jpg);
+}
+.image-2 {
+  background-image: url(../ejercicio_4/images/summer_2.jpeg);
+}
+.image-3 {
+  background-image: url(../ejercicio_4/images/summer_3.jpeg);
+}
+.image-4 {
+  background-image: url(../ejercicio_4/images/summer_4.jpeg);
+}
+.text {
+  margin: 10px 10px;
+}
+h2 {
+  color: var(--h2-color);
+}
+h2:hover {
+  color: var(--hover-color);
+  cursor: pointer;
+}
+.published {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  margin: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+span {
+  color: var(--hover-color);
+  margin-left: 5px;
+}
+
+.button-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin: 10px;
+  color: var(--button-text-color);
+  background-color: var(--button-color);
+}
+.button-info:hover {
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+@media screen and (max-width: 1020px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
