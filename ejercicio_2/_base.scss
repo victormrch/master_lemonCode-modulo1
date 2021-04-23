@@ -1,5 +1,4 @@
-$width-box: 300px;
-$height-box: 100px;
+@import "_variables.scss";
 
 .container {
   display: flex;
@@ -9,8 +8,8 @@ $height-box: 100px;
 .box {
   width: $width-box;
   height: $height-box;
-  border: solid 2px black;
-  border-radius: 40px 10px;
-  margin-bottom: 2px;
+  border: $border-box;
+  border-radius: $border-radius-box;
+  margin-bottom: $margin-box;
   @include centerTextInBox;
 }
