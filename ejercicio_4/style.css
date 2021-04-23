@@ -1,29 +1,75 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
+html {
+  --border-color: #35838d;
+  --hover-color: #fe4c4a;
+  --button-color: #70abaf;
+  --button-text-color: #fff;
+  --h2-color: #012e33;
+}
 body {
-  margin: 0px;
-  padding: 0px;
   font-family: "Poppins";
 }
 .grid-container {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-card {
+  display: grid;
   grid-template-rows: 1fr 1fr 0.15fr auto;
-  border: solid 2px black;
-  width: 20%;
+  border: solid 2px var(--border-color);
   margin: 0px 15px;
 }
-.image {
+.image-1 {
   background-image: url(../ejercicio_4/images/summer.jpg);
   background-size: cover;
   background-position: center center;
   width: 100%;
   height: 100%;
 }
-.image:hover {
+.image-1:hover {
+  transform: translatey(-5px) translatex(-5px) scale(1.15);
+}
+.image-2 {
+  background-image: url(../ejercicio_4/images/summer_2.jpeg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+.image-2:hover {
+  transform: translatey(-5px) translatex(-5px) scale(1.15);
+}
+.image-3 {
+  background-image: url(../ejercicio_4/images/summer_3.jpeg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+.image-3:hover {
+  transform: translatey(-5px) translatex(-5px) scale(1.15);
+}
+.image-4 {
+  background-image: url(../ejercicio_4/images/summer_4.jpeg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+.image-4:hover {
   transform: translatey(-5px) translatex(-5px) scale(1.15);
 }
 .text {
   margin: 10px 10px;
 }
+h2 {
+  color: var(--h2-color);
+}
+h2:hover {
+  color: var(--hover-color);
+  cursor: pointer;
+}
+
 .published {
   display: flex;
   justify-content: flex-end;
@@ -32,7 +78,7 @@ body {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 span {
-  color: #3f37c9;
+  color: var(--hover-color);
   margin-left: 5px;
 }
 
@@ -42,9 +88,10 @@ span {
   align-items: center;
   height: 50px;
   margin: 10px;
-  color: white;
-  background-color: #4cc9f0;
+  color: var(--button-text-color);
+  background-color: var(--button-color);
 }
 .button-info:hover {
-  background-color: #4361ee;
+  background-color: var(--hover-color);
+  cursor: pointer;
 }
